@@ -10,6 +10,11 @@ class Idea extends Model
 {
     use HasFactory, Sluggable;
 
+    const PAGINATION_COUNT = 10;
+
+    protected $guarded = [];
+
+    
         /**
      * Return the sluggable configuration array for this model.
      *
