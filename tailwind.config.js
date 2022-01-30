@@ -18,8 +18,6 @@ module.exports = {
                 'red': '#ec454f',
                 'green': '#1aab8b',
                 'purple': '#8b60ed',
-
-
             },
             fontFamily: {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans],

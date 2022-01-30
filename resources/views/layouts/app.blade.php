@@ -30,7 +30,9 @@
             <a href="">Logo</a>
             <div class="flex items-center">
                 @if (Route::has('login'))
-                <div class=" px-6 py-4">
+                <div class=" px-6 py-4
+
+                ">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                     @else
