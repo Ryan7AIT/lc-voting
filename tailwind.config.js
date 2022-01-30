@@ -11,13 +11,13 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                'purple': '#8b60ed',
                 'gray-bg': '#f7f8fc',
                 'blue': '#328af1',
                 'blue-hover': '#2879bd',
                 'yellow': '#ffc73c',
                 'red': '#ec454f',
                 'green': '#1aab8b',
-                'purple': '#8b60ed',
             },
             fontFamily: {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
