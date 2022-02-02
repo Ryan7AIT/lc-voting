@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
+use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
 class Idea extends Model
 {
@@ -43,5 +44,10 @@ class Idea extends Model
     public function status()
     {
         return $this->belongsTo(Status::class);
+    }
+
+    public function votes() {
+
+        return $this->belongsToMany(User::class, 'votes');
     }
 }

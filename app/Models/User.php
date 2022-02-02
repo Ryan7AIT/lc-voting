@@ -47,6 +47,13 @@ class User extends Authenticatable
         return $this->hasMany(Idea::class);
     }
 
+    public function votes() {
+
+        return $this->belongsToMany(Idea::class, 'votes');
+    }
+
+
+
     public function getAvatar()
     {
         $firstCharacter = $this->email[0];
@@ -64,5 +71,5 @@ class User extends Authenticatable
             .$integerToUse
             .'.png';
     }
-    
+
 }
